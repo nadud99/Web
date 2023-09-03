@@ -1,0 +1,133 @@
+body {
+    margin: 0%;
+}
+a{
+    text-decoration-line: none;
+}
+h1{
+    font-size: 50px;
+    border-bottom: gray 2px solid;
+    text-align: center;
+    margin: 0;
+    padding: 80px;
+}
+h2{
+    font-size: 40px;
+    margin-left: 50px;
+}
+ul{
+    margin: 0px;
+    padding: 0px;
+}
+ul li{
+    font-size: 30px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    text-align: center;
+    list-style: none;
+}
+#grid{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+}
+.main-content{
+    margin: 20px;
+    padding: 30px;
+}
+#keyword {
+    display: flex;
+    flex-wrap : wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin-bottom: 50px;
+}
+#keyword p{
+    font-size: 25px;
+}
+#slider{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-wrap : wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#slider span{
+    position: absolute;
+    font-size: 30px;
+}
+#profile{
+    display: flex;
+    flex-wrap : wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#profile-picture{
+    width: 250px;
+    margin-right: 50px;
+}
+#profile-content{
+    font-size: 20px;
+    padding: 15px;
+}
+
+
+@media(max-width:1000px){
+    h1{
+        font-size: 40px;
+        padding: 80px;
+    }
+    #grid{
+        display: block;
+    }
+    h2{
+        font-size: 25px;
+        margin-left: 0;
+        margin-top: 80px;
+        text-align: center;
+    }
+    #menu{
+        display: flex;
+        height: 70px;
+        align-items: center;
+        justify-content: center;
+    }
+    ul li{
+        font-size: 25px;
+        float: left;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 0px;
+    }
+    #keyword {
+        height: 80px;
+        margin-bottom: 30px;
+    }
+    #keyword p{
+        font-size: 20px;
+    }
+    .main-content{
+        margin: 20px;
+        padding: 20px;
+    }
+    #slider{
+        height: 80px;
+    }
+    #slider span{
+        font-size: 25px;
+    }
+    #profile-picture{
+        width: 200px;
+        margin-right: 0px;
+        align-items: center;
+    }
+    #profile-content{
+        font-size: 20px;
+        padding: 10px;
+    }
+}
