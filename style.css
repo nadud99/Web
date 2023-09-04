@@ -12,27 +12,28 @@ h1{
 }
 h2{
     font-size: 40px;
-    margin-left: 80px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+strong{
+    font-size: 50px;
 }
 ul{
+    list-style: none;
+}
+#menu ul{
     margin: 0px;
     padding: 0px;
+    text-align: center;
 }
-ul li{
-    font-size: 30px;
+#menu ul li{
+    font-size: 28px;
     margin-bottom: 30px;
     margin-top: 50px;
-    margin-left: 100px;
-    text-align: center;
-    list-style: none;
 }
 #grid{
     display: grid;
-    grid-template-columns: 200px 1fr;
-}
-.main-content{
-    margin: 20px;
-    padding: 30px;
+    grid-template-columns: 300px 1fr;
 }
 #keyword {
     display: flex;
@@ -55,7 +56,6 @@ ul li{
     justify-content: center;
     align-items: center;
 }
-
 #slider span{
     position: absolute;
     font-size: 30px;
@@ -64,17 +64,21 @@ ul li{
     display: flex;
     flex-wrap : wrap;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    margin-bottom: 200px;
+    margin-bottom: 150px;
 }
 #profile-img{
-    width: 250px;
-    margin-right: 50px;
+    width: 300px;
+    margin-right: 40px;
 }
 #profile-content{
     font-size: 20px;
-    padding: 15px;
+}
+#skills{
+    font-size: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 
@@ -88,8 +92,6 @@ ul li{
     }
     h2{
         font-size: 25px;
-        margin-left: 0;
-        margin-top: 80px;
         text-align: center;
     }
     #menu{
@@ -98,11 +100,12 @@ ul li{
         align-items: center;
         justify-content: center;
     }
-    ul li{
+    #menu ul li{
         font-size: 25px;
         float: left;
         margin-left: 50px;
         margin-right: 50px;
+        margin-top: 0px;
         margin-bottom: 0px;
     }
     #keyword {
@@ -112,23 +115,60 @@ ul li{
     #keyword p{
         font-size: 20px;
     }
-    .main-content{
-        margin: 20px;
-        padding: 20px;
-    }
     #slider{
         height: 80px;
     }
     #slider span{
         font-size: 25px;
     }
+    #profile{
+        justify-content: center;
+        align-items: center;
+    }
     #profile-img{
-        width: 200px;
-        margin-right: 0px;
+        width: 250px;
         align-items: center;
     }
     #profile-content{
         font-size: 20px;
         margin-top: 20px;
+        margin-left: 15px;
+    }
+    #skills{
+        text-align: center;
+    }
+}
+
+@media(max-width:550px){
+    h1{
+        font-size: 40px;
+    }
+    #menu ul li{
+        font-size: 20px;
+        float: left;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    #keyword {
+        height: 60px;
+        margin-bottom: 30px;
+    }
+    #keyword p{
+        font-size: 13px;
+    }
+    #slider{
+        width: 70px;
+    }
+    #slider span{
+        font-size: 18px;
+    }
+    #profile-img{
+        margin-right: 0px;
+    }
+    #profile-content{
+        font-size: 15px;
+    }
+    #skills{
+        font-size: 20px;
     }
 }

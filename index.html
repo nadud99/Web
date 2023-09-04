@@ -1,15 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>박나영-포트폴리오</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="app.js"></script>
 </head>
 <body>
-    <h1>Nayoung's Portfolio</h1>
-    
-    <div id="grid">
+    <header>
+        <input type="button" value="night" onclick="nightDayHandler(this)">
+        <h1>Nayoung's Portfolio</h1>
+    </header>
+    <main id="grid">
         <nav id="menu">
             <ul>
                 <li><a href="1.html">Profile</a></li>
@@ -20,6 +24,7 @@
         <div class="main-content">
             <h2>Profile</h2>
             <div id="keyword">
+                <strong>"</strong>
                 <p>안녕하세요. 저는</p>
                 <div id="slider">
                     <span>열정</span>
@@ -27,9 +32,10 @@
                     <span>끈기</span>                    
                 </div>
                 <p>있는 개발자 박나영 입니다.</p>
+                <strong>"</strong>
             </div>
             <div id="profile">
-                <img id="profile-img" src="/image/monitor_Mac_2.avif" alt="">
+                <img id="profile-img" src="profile-img.jpeg" alt="">
                 <div id="profile-content">
                     <p>이름 : 박나영 </p>
                     <p>생년월일 : 99년 9월 21일, 만 23살</p>
@@ -40,11 +46,32 @@
                 </div>
             </div>
             <h2>Skills</h2>
-            <div>
+            <div id="skills">
+                <span>HTML,</span>
+                <span>CSS,</span>
+                <span>JavaScript,</span>
+                <span>jQuery,</span>
+                <span>C#,</span>
+                <span>Java,</span>
+                <span>python </span>
             </div>
             <h2>Project</h2>
+            <div id="project">
+                <p>unity_payoff</p>
+                <p>프로젝트 기간 : 2022.05 ~ 2022.12</p>
+                <video width="700" src="unityProject.mov" controls frameborder="0" allowfullscreen></video>
+                <video width="700" src="minigame.mov" controls frameborder="0" allowfullscreen></video>
+                <p>우산 같이 써요</p>
+                <p>프로젝트 기간 : 2022.04 ~ 2022.6</p>
+                <embed src="umbrella.pdf" type="application/pdf" width=700px height=400px/>
+                <embed src="analysis.pdf" type="application/pdf" width=700px height=1000px/>
+                <p>WithPet App</p>
+                <p>프로젝트 기간 : 2022.12</p>
+                <img width="700" src="withpet2.png" alt="">
+                <img width="700" src="withpet1.png" alt="">
+            </div>
         </div>
-    </div>
+    </main>
 
 </body>
 </html>
