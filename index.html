@@ -6,19 +6,18 @@
     <title>박나영-포트폴리오</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="app.js"></script>
 </head>
 <body>
     <header>
         <input type="button" value="night" onclick="nightDayHandler(this)">
         <h1>Nayoung's Portfolio</h1>
     </header>
-    <main id="grid">
+    <main>
         <nav id="menu">
-            <ul>
-                <li><a href="1.html">Profile</a></li>
-                <li><a href="2.html">Skills</a></li>
-                <li><a href="3.html">Project</a></li>
+            <ul id="menuList">
+                <li>Profile</li>
+                <li>Skills</li>
+                <li>Project</li>
             </ul>
         </nav>
         <div class="main-content">
@@ -47,13 +46,17 @@
             </div>
             <h2>Skills</h2>
             <div id="skills">
-                <span>HTML,</span>
-                <span>CSS,</span>
-                <span>JavaScript,</span>
-                <span>jQuery,</span>
-                <span>C#,</span>
-                <span>Java,</span>
-                <span>python </span>
+                <img width="350" src="image/pngwing.com.png" alt="">
+                <img width="120" src="image/c.png" alt="">
+                <img width="140" src="image/java.png" alt="">
+                <img width="110" src="image/pythonLogo.png" alt="">               
+                <!-- <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>jQuery</span>
+                <span>C#</span>
+                <span>Java</span>
+                <span>python</span> -->
             </div>
             <h2>Project</h2>
             <div id="project">
@@ -63,15 +66,16 @@
                 <video width="700" src="minigame.mov" controls frameborder="0" allowfullscreen></video>
                 <p>우산 같이 써요</p>
                 <p>프로젝트 기간 : 2022.04 ~ 2022.6</p>
-                <embed src="umbrella.pdf" type="application/pdf" width=700px height=400px/>
-                <embed src="analysis.pdf" type="application/pdf" width=700px height=1000px/>
+                <!-- <embed src="umbrella.pdf" type="application/pdf" width=700px height=400px/>
+                <embed src="analysis.pdf" type="application/pdf" width=700px height=1000px/> -->
                 <p>WithPet App</p>
                 <p>프로젝트 기간 : 2022.12</p>
-                <img width="700" src="withpet2.png" alt="">
-                <img width="700" src="withpet1.png" alt="">
+                <img width="700" src="image/withPet1.png" alt="">
+                <img width="700" src="image/withPet2.png" alt="">
             </div>
         </div>
     </main>
 
 </body>
+<script src="app.js"></script>
 </html>

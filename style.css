@@ -8,12 +8,13 @@ h1{
     font-size: 50px;
     text-align: center;
     margin: 0;
-    padding: 150px;
+    padding: 100px;
 }
 h2{
     font-size: 40px;
-    margin-top: 80px;
-    margin-bottom: 80px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
 }
 strong{
     font-size: 50px;
@@ -21,19 +22,35 @@ strong{
 ul{
     list-style: none;
 }
-#menu ul{
+
+#menu{
+    background-color: gainsboro;
+}
+.top_bar_fix{
+    position:fixed; 
+    top:0; 
+    left:0; 
+    width:100%;
+}
+.pd_top_80{
+    padding-top:80px;
+}
+#menuList{
+    display: flex;
+    height: 55px;
+    align-items: center;
+    justify-content: center;
     margin: 0px;
     padding: 0px;
-    text-align: center;
 }
-#menu ul li{
-    font-size: 28px;
-    margin-bottom: 30px;
-    margin-top: 50px;
+#menuList li{
+    font-size: 25px;
+    margin-left: 150px;
+    margin-right: 150px;
 }
-#grid{
-    display: grid;
-    grid-template-columns: 300px 1fr;
+#menuList li.selected{
+    color:#fff;
+    font-weight: 600;
 }
 #keyword {
     display: flex;
@@ -64,9 +81,9 @@ ul{
     display: flex;
     flex-wrap : wrap;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
 }
 #profile-img{
     width: 300px;
@@ -76,10 +93,15 @@ ul{
     font-size: 20px;
 }
 #skills{
-    font-size: 25px;
-    margin-left: 20px;
-    margin-right: 20px;
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 200px;
 }
+/* #skills span{
+    font-size: 25px;
+    margin-left: 40px;
+    margin-right: 40px;
+} */
 
 
 @media(max-width:1000px){
@@ -94,15 +116,8 @@ ul{
         font-size: 25px;
         text-align: center;
     }
-    #menu{
-        display: flex;
-        height: 70px;
-        align-items: center;
-        justify-content: center;
-    }
-    #menu ul li{
+    #menuList li{
         font-size: 25px;
-        float: left;
         margin-left: 50px;
         margin-right: 50px;
         margin-top: 0px;
@@ -134,20 +149,23 @@ ul{
         margin-top: 20px;
         margin-left: 15px;
     }
-    #skills{
-        text-align: center;
-    }
 }
 
 @media(max-width:550px){
     h1{
         font-size: 40px;
     }
-    #menu ul li{
+    #menuList li{
         font-size: 20px;
         float: left;
         margin-left: 25px;
         margin-right: 25px;
+    }
+    .top_bar_fix{
+        position:fixed; 
+        top:0; 
+        left:0; 
+        width:100%;
     }
     #keyword {
         height: 60px;
