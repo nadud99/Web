@@ -20,7 +20,7 @@ function select(ulEl, liEl){
     }
     else if(liEl.innerText === 'Project'){
         liEl.classList.add('selected');
-        movePage(1700);
+        movePage(1680);
     }
 }
 
