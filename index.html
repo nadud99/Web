@@ -6,6 +6,7 @@
     <title>박나영-포트폴리오</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 </head>
 <body>
     <header>
@@ -26,9 +27,9 @@
                 <strong>"</strong>
                 <p>안녕하세요. 저는</p>
                 <div id="slider">
-                    <span>열정</span>
-                    <span>창의력</span>
-                    <span>끈기</span>                    
+                    <span class="letters letters-1">열정</span>
+                    <span class="letters letters-2">창의력</span>
+                    <span class="letters letters-3">끈기</span>                    
                 </div>
                 <p>있는 개발자 박나영 입니다.</p>
                 <strong>"</strong>
@@ -36,10 +37,11 @@
             <div id="profile">
                 <img id="profile-img" src="image/profile-img.jpeg" alt="">
                 <div id="profile-content">
-                    <p>이름 : 박나영 </p>
-                    <p>생년월일 : 99년 9월 21일, 만 23살</p>
-                    <p>학력 : 2018년 ~ 2023년 8월 강원대학교 컴퓨터공학 졸업</p>
-                    <p>Email : wawa9149@gmail.com</p>
+                    <p>🙎🏻‍♀️ 이름 : 박나영 </p>
+                    <p>🎉 생년월일 : 99년 9월 21일, 만 23살</p>
+                    <p>🏫 학력 : 2018년 ~ 2023년 8월 강원대학교 컴퓨터공학 졸업</p>
+                    <p>🏂 취미 : 스노우보드, 인테리어, 퍼즐</p>
+                    <p>📧 Email : wawa9149@gmail.com</p>
                     <p>Github : <a href="https://github.com/nadud99">https://github.com/nadud99</a></p>
                     <p>Tistory : <a href="https://gusukx2.tistory.com/">https://gusukx2.tistory.com/</a></p>
                 </div>
@@ -50,46 +52,68 @@
                 <img width="120" src="image/c.png" alt="">
                 <img width="140" src="image/java.png" alt="">
                 <img width="110" src="image/pythonLogo.png" alt="">               
-                <!-- <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-                <span>jQuery</span>
-                <span>C#</span>
-                <span>Java</span>
-                <span>python</span> -->
             </div>
             <h2>Project</h2>
             <div id="project">
-                <p>unity_payoff</p>
-                <p>프로젝트 기간 : 2022.05 ~ 2022.12</p>
-                <video width="700" src="video/unityProject.mov" controls frameborder="0" allowfullscreen></video>
-                <video width="700" src="video/minigame.mov" controls frameborder="0" allowfullscreen></video>
-                <p>담당</p>
+                <h3>🎮 unity_payoff 🎮</h3>
+                <p>⏳ 프로젝트 기간 : 2022.05 ~ 2022.12</p>
+                <div id="video">
+                    <video src="video/unityProject.mov" controls frameborder="0" allowfullscreen></video>
+                    <video src="video/minigame.mov" controls frameborder="0" allowfullscreen></video>
+                </div>
+                <p>📄 프로젝트 내용</p>
+                <p class="project_content">2D, 미스터리 어드벤처 장르인 방탈출 게임입니다.</p>
+                <p>🙋🏻‍♀️ 담당</p>
                 <ul>
-                    <li>플레이어 이동, 텔레포트, 캐비넷에 숨는 기능</li>
-                    <li>몬스터 이동, 추격, 텔레포트</li>
-                    <li>카메라 시점 이동</li>
-                    <li>마우스 커서 오브젝트에 따라 이미지 변경</li>
-                    <li>키패드 잠금장치</li>
-                    <li>미니게임 벽돌깨기</li>
-                    <li>(구현중) 세이브 & 로드</li>
+                    <li>📍 플레이어 이동, 텔레포트, 캐비넷에 숨는 기능</li>
+                    <li>📍 몬스터 이동, 추격, 텔레포트</li>
+                    <li>📍 카메라 시점 이동</li>
+                    <li>📍 마우스 커서 오브젝트에 따라 이미지 변경</li>
+                    <li>📍 키패드 잠금장치</li>
+                    <li>📍 미니게임 벽돌깨기</li>
+                    <li>📍 (구현중) 세이브 & 로드</li>
                 </ul>
-                <p>우산 같이 써요</p>
-                <p>프로젝트 기간 : 2022.04 ~ 2022.6</p>
+                <h3>☂️ 우산 같이 써요 ☂️</h3>
+                <p>⏳ 프로젝트 기간 : 2022.04 ~ 2022.6</p>
+                <div id="umbrella_1">
+                    <img src="image/umbrella_1.png" alt="">
+                    <img src="image/umbrella_2.png" alt="">
+                    <img src="image/umbrella_3.png" alt="">                    
+                </div>
+                <div id="umbrella_2">
+                    <img src="image/umbrella2_!.png" alt="">
+                    <img src="image/umbrella2_2.png" alt="">
+                    <img src="image/umbrella2_3.png" alt="">
+                    <img src="image/umbrella2_4.png" alt="">
+                    <img src="image/umbrella2_5.png" alt="">                    
+                </div>
+                <p>📄 프로젝트 내용</p>
+                <p class="project_content">우산 같이 써요는 우산 대여 및 우산 친구 매칭 시스템을 설계한 프로젝트입니다.</p>
+                <p>🙋🏻‍♀️ 담당</p>
                 <ul>
-                    <li>타당성 분석 : 경제적, 기술적, 법적 타당성</li>
-                    <li>일본에서 실제 적용 사례 조사</li>
-                    <li>DFD, 프로세스 명세서</li>
-                    <li>사건추적도, 상태변화도</li>
+                    <li>📍 타당성 분석 : 경제적, 기술적, 법적 타당성</li>
+                    <li>📍 일본에서 실제 적용 사례 조사</li>
+                    <li>📍 DFD, 프로세스 명세서</li>
+                    <li>📍 사건추적도, 상태변화도</li>
                 </ul>
-                <p>WithPet App</p>
-                <p>프로젝트 기간 : 2022.12</p>
-                <img width="700" src="image/withPet1.png" alt="">
-                <img width="700" src="image/withPet2.png" alt="">
+                <h3>🐶 WithPet App 🐶</h3>
+                <p>⏳ 프로젝트 기간 : 2022.12</p>
+                <div id="withPet">
+                    <img src="image/withPet1.png" alt="">
+                    <img src="image/withPet2.png" alt="">
+                    <img src="image/withPet3.png" alt="">
+                </div>
+                <p>📄 프로젝트 내용</p>
+                <p class="project_content">OpenAPI를 이용해 반려동물 동반 가능한 관광 정보를 제공하는 앱 서비스입니다.</p>
+                <p>🙋🏻‍♀️ 담당</p>
+                <ul>
+                    <li>📍 안드로이드 스튜디오를 이용해 API값을 불러오고 내용을 출력</li>
+                </ul>
             </div>
         </div>
+        <footer>
+        </footer>
     </main>
-
 </body>
 <script src="app.js"></script>
 </html>

@@ -16,6 +16,12 @@ h2{
     margin-bottom: 50px;
     margin-left: 50px;
 }
+h3{
+    font-size: 33px;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
 strong{
     font-size: 50px;
 }
@@ -66,16 +72,21 @@ ul{
 }
 #slider{
     position: relative;
-    width: 100px;
+    width: 150px;
     height: 100px;
     display: flex;
     flex-wrap : wrap;
     justify-content: center;
     align-items: center;
 }
-#slider span{
+#slider .letters{
     position: absolute;
-    font-size: 30px;
+    font-size: 32px;
+    /* font-size: 30px;
+    opacity: 0; */
+    left: 27%;
+    top: 31%;
+    opacity: 0;
 }
 #profile{
     display: flex;
@@ -97,11 +108,77 @@ ul{
     margin-top: 200px;
     margin-bottom: 200px;
 }
-/* #skills span{
+#project p{
     font-size: 25px;
-    margin-left: 40px;
-    margin-right: 40px;
-} */
+    margin-left: 100px;
+}
+#project .project_content{
+    font-size: 20px;
+    margin-left: 150px;
+}
+#project li{
+    font-size: 20px;
+    margin-left: 100px;
+    margin-bottom: 15px;
+}
+#project ul{
+    margin-bottom: 150px;
+}
+#video{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+#video video{
+    width: 550px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+#project img{
+    width: 300px;
+}
+#umbrella_1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 100px;    
+}
+#umbrella_2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+#umbrella_1 img{
+    width: 400px;
+}
+#umbrella_2 img{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    width: 250px;
+}
+#withPet{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+#withPet img{
+    width: 400px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+footer{
+    background-color: gainsboro;
+    height: 100px;
+}
 
 
 @media(max-width:1000px){
@@ -155,6 +232,12 @@ ul{
     h1{
         font-size: 40px;
     }
+    h2{
+        margin-left: 0px;
+    }
+    h3{
+        font-size: 25px;
+    }
     #menuList li{
         font-size: 20px;
         float: left;
@@ -177,8 +260,14 @@ ul{
     #slider{
         width: 70px;
     }
-    #slider span{
-        font-size: 18px;
+    #slider .letters{
+        position: absolute;
+        font-size: 15px;
+        /* font-size: 30px;
+        opacity: 0; */
+        left: 27%;
+        top: 38%;
+        opacity: 0;
     }
     #profile-img{
         margin-right: 0px;
@@ -188,5 +277,28 @@ ul{
     }
     #skills{
         font-size: 20px;
+    }
+    #project p{
+        font-size: 20px;
+        text-align: center;
+        margin-left: 0px;
+    }
+    #project .project_content{
+        font-size: 15px;
+        margin-left: 0px;
+        text-align: center;
+    }
+    #project ul{
+        padding: 0px;
+    }
+    #project li{
+        font-size: 15px;
+        margin-left: 0px;
+        text-align: center;
+    }
+    #withPet img{
+        width: 400px;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
 }

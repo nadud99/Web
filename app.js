@@ -2,8 +2,8 @@
 //메뉴 탭 선택 시 색상 변경
 const menuWrap = document.querySelector('#menuList');
 
-function movePage(a){
-    window.scrollTo({ top: a, behavior: "smooth" });
+function movePage(dis){
+    window.scrollTo({ top: dis, behavior: "smooth" });
 }
 
 function select(ulEl, liEl){
@@ -20,7 +20,7 @@ function select(ulEl, liEl){
     }
     else if(liEl.innerText === 'Project'){
         liEl.classList.add('selected');
-        movePage(1680);
+        movePage(1675);
     }
 }
 
@@ -89,3 +89,55 @@ function nightDayHandler(self){
         Links.setColor('blue');
     }
 }
+
+var slider = {};
+slider.opacityIn = [0,1];
+slider.scaleIn = [0.2, 1];
+slider.scaleOut = 3;
+slider.durationIn = 800;
+slider.durationOut = 600;
+slider.delay = 500;
+
+anime.timeline({loop: true})
+  .add({
+    targets: '#slider .letters-1',
+    opacity: slider.opacityIn,
+    scale: slider.scaleIn,
+    duration: slider.durationIn
+  }).add({
+    targets: '#slider .letters-1',
+    opacity: 0,
+    scale: slider.scaleOut,
+    duration: slider.durationOut,
+    easing: "easeInExpo",
+    delay: slider.delay
+  }).add({
+    targets: '#slider .letters-2',
+    opacity: slider.opacityIn,
+    scale: slider.scaleIn,
+    duration: slider.durationIn
+  }).add({
+    targets: '#slider .letters-2',
+    opacity: 0,
+    scale: slider.scaleOut,
+    duration: slider.durationOut,
+    easing: "easeInExpo",
+    delay: slider.delay
+  }).add({
+    targets: '#slider .letters-3',
+    opacity: slider.opacityIn,
+    scale: slider.scaleIn,
+    duration: slider.durationIn
+  }).add({
+    targets: '#slider .letters-3',
+    opacity: 0,
+    scale: slider.scaleOut,
+    duration: slider.durationOut,
+    easing: "easeInExpo",
+    delay: slider.delay
+  }).add({
+    targets: '.slider',
+    opacity: 0,
+    duration: 500,
+    delay: 500
+  });
